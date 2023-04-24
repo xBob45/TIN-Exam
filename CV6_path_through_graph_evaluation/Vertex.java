@@ -6,9 +6,8 @@ import java.util.HashSet;
 public class Vertex {
 	
 	private String name; 										//Hodnota v kolečku každého vrcholu grafu
-	private HashSet<Vertex> vertexSet = new HashSet<Vertex>(); //Množina prvků, ve která neumožňuje duplicity, což je v případě vrcholů výhodné
-	private HashMap<Vertex, Integer> costs = new HashMap<Vertex, Integer>(); //Každému vrcholu je přiřazena hodnota kterou má cesta od začátku grafu (prvního vrcholu) k zadanému vrcholu.
-	
+	private HashSet<Vertex> vertexSet = new HashSet<Vertex>(); //Sousední vrcholy daného vrcholu
+	private HashMap<Vertex, Integer> costs = new HashMap<Vertex, Integer>(); //Sousední vrcholy a "cena" cesty k nim
 	
 	
 	//Parametrický konstruktor,skrze který dojde k inicializování "name" proměnné 
@@ -26,11 +25,8 @@ public class Vertex {
 	}
 	
 	public void addConnection(Vertex v2, int cost) { //"v2" protože v1 bude vrchol na, který se tato metoda bude aplikovat
-		vertexSet.add(v2); 	 //Vložení vrcholu (objekt) do množiny vrcholů.
+		vertexSet.add(v2); 	     //Vložení vrcholu (objekt) do množiny sousedních vrcholů.
 		costs.put(v2, cost);	// Vložení asociace 'vrchol : hodnota cesty mezi v1 (vrchol na, který se metoda 'volá' a druhým vrcholem 'v2')'
 	}
-	
-	
-	
-
 }
+
