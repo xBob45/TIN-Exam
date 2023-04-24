@@ -6,6 +6,9 @@ public class Main {
 		
 		Mapa registr = new Mapa();
 		
+		
+		
+		
 		Osobni BMW = new Osobni();
 		BMW.setNazev("BMW X6(2023)");
 		BMW.setBarva("Modrá");
@@ -23,7 +26,7 @@ public class Main {
 		
 		
 		registr.hledej("4Y1SL65848Z411439");
-		registr.hledej("4Y1SL65848Z411440");
+		
 		
 		
 

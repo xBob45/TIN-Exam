@@ -1,6 +1,6 @@
 package registr_kradenych_aut;
 
-public class Auto extends Object{
+public abstract class Auto {
 	
 	//Class variables
 	private String VIN;

@@ -32,7 +32,7 @@ public class Nakladni extends Auto{
 	}
 	@Override
 	public String toString() {
-		return "\n" +"Název: "+getNazev() +"\n" + "VIN: "+getVIN() +"\n"+ "Barva: "+getBarva() +"\n"+ "Prives: "+getPrives()+"\n"+"VIN privesu: "+getVIN_prives();
+		return "\n" + "\033[4m" + "Typ: Nákladní auto" + "\033[0m" + "\n" +"Název: "+getNazev() +"\n" + "VIN: "+getVIN() +"\n"+ "Barva: "+getBarva() +"\n"+ "Prives: "+getPrives()+"\n"+"VIN privesu: "+getVIN_prives();
 	}
 	
 	
